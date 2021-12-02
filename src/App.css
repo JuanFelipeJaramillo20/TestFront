@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Times New Roman";
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+body {
+    background-image: url("./img/fondo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(253, 232, 238, 0.473);
+}
+
+.caja__trasera div {
+    margin: 10px;
+    color: black;
+    transition: all 500ms;
+}
+
+.caja__trasera div p,
+.caja__trasera div button {
+    margin-top: 30px;
+}
+
+.caja__trasera div h3 {
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera button {
+    padding: 10px 40px;
+    border: 2px;
+    background: brown;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja__trasera button:hover {
+    background: white;
+    color: brown;
+}
+
+
+/*formulario de datos*/
+
+.contenedor__login-register {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contenedor__login-register form {
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor__login-register form h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: brown;
+}
+
+.contenedor__login-register form input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor__login-register form input.checkbox {
+    width: auto;
+    margin-top: 0px;
+    padding: 0px;
+    margin-right: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor__login-register form button {
+    margin-top: 40px;
+    padding: 10px 40px;
+    border: 2px;
+    background: brown;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.contenedor__login-register form button:hover {
+    background: rgba(248, 125, 125, 0.3);
+    color: brown;
+}
+
+.formulario__login {
+    border: 1px solid rgba(248, 125, 125, 0.5);
+    opacity: 1;
+    display: block;
+}
+
+
+/* Estilos para login  */
+html{
+  height: 100%;
+}
+
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+
+
+.form-signin {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  margin: auto;
+  
+}
+
+.form-signin .checkbox {
+  font-weight: 200;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 1;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
